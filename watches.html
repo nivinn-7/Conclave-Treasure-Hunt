@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches - Timeless Elegance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+        :root {
+            --primary-color: #333;
+            --secondary-color: #f4f4f4;
+            --accent-color: #a37b5a;
+            --text-color: #555;
+            --light-text-color: #fff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav ul li a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-weight: 400;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: url('assets/images/hero-watch.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light-text-color);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 2rem;
+        }
+
+        .section-content img {
+            max-width: 50%;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--light-text-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        
+        .cta {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+        
+        .cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--light-text-color);
+        }
+        
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text-color);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #8c6a4d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Eternity Timepieces</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>The Art of Timekeeping</h2>
+                <p>Explore a curated collection of the world's finest luxury watches.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Luxury Watches</h2>
+                <div class="section-content">
+                    <div>
+                        <h3>The Enduring Art of Horology</h3>
+                        <p>A luxury watch is far more than a simple timekeeping device; it's a testament to centuries of tradition and a culmination of exceptional craftsmanship. Rooted in the Swiss and European horological traditions that began in the 16th century, these timepieces are the result of meticulous skill passed down through generations. Unlike mass-produced watches, each luxury piece is often <b>hand-assembled</b> by a single master watchmaker, a process that can take hundreds, or even thousands, of hours. This dedication is evident in the finishing of every tiny component, from the polishing of gears to the intricate decorative patterns like <i>Côtes de Genève</i> and <i>perlage</i> that are applied by hand, transforming the internal mechanism into a work of art.</p>
+                    </div>
+                    <img src="assets/images/about-1.jpg" alt="Detailed watch movement">
+                </div>
+                
+                <div class="section-content reverse">
+                    <img src="assets/images/about-2.jpg" alt="Close-up of a luxury watch face">
+                    <div>
+                        <h3>The Unseen Heart: Mechanical Movements</h3>
+                        <p>The true soul of a luxury watch is its mechanical movement. These intricate "engines" operate without a battery, powered instead by the kinetic energy from the wearer's wrist or the manual winding of a spring. The complexity of these movements is what often dictates their value. High-end watches may feature <b>complications</b>—functions beyond simple time-telling—such as a <b>perpetual calendar</b> that correctly adjusts for leap years, a <b>tourbillon</b> that counteracts the effects of gravity on accuracy, or a <b>minute repeater</b> that chimes the time on demand. Each of these features represents a pinnacle of technical ingenuity, demonstrating the brand's mastery of micro-engineering and pushing the boundaries of what is possible in a tiny, wearable device.</p>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <div>
+                        <h3>A Legacy of Materials and Design</h3>
+                        <p>Luxury watches are built to last for generations, and this is reflected in their choice of materials. Cases and bracelets are not simply made of steel, but of <b>high-grade stainless steel</b>, gold, platinum, or even modern, durable alloys like titanium and ceramic. Dials are canvases for artistry, crafted from rare materials like mother-of-pearl, hand-painted enamel, or adorned with intricate <i>guilloché</i> patterns. The glass that protects the dial is typically <b>sapphire crystal</b>, a material so hard it's virtually scratch-proof. Every detail, from the precise alignment of the hands to the perfectly sculpted case, is a deliberate design choice that contributes to the watch's timeless elegance and its identity as a wearable work of art.</p>
+                    </div>
+                    <img src="assets/images/about-3.jpg" alt="Elegant golden watch and accessories">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="brands" class="section" style="background-color: #fcfcfc;">
+            <div class="container">
+                <h2>Iconic Watch Brands</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="assets/images/rolex.jpg" alt="Rolex Watch">
+                        <div class="card-content">
+                            <h3>Rolex</h3>
+                            <p>Synonymous with success and prestige, Rolex is a Swiss watch manufacturer known for its durable, reliable, and iconic designs.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/omega.jpg" alt="Omega Watch">
+                        <div class="card-content">
+                            <h3>Omega</h3>
+                            <p>With a rich history tied to space exploration and the Olympics, Omega combines precision, innovation, and timeless style.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/patek.jpg" alt="Patek Philippe Watch">
+                        <div class="card-content">
+                            <h3>Patek Philippe</h3>
+                            <p>Widely regarded as one of the most prestigious watch brands, Patek Philippe is celebrated for its intricate complications and exquisite craftsmanship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="section">
+            <div class="container">
+                <h2>Our Curated Collection</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="assets/images/classic.jpg" alt="Classic Dress Watch">
+                        <div class="card-content">
+                            <h3>The Classic</h3>
+                            <p>A timeless dress watch with a slim profile and elegant dial. Perfect for formal occasions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/chronograph.jpg" alt="Sporty Chronograph">
+                        <div class="card-content">
+                            <h3>The Chronograph</h3>
+                            <p>A high-performance watch with a built-in stopwatch function, ideal for the active enthusiast.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/diver.jpg" alt="Robust Dive Watch">
+                        <div class="card-content">
+                            <h3>The Diver</h3>
+                            <p>Engineered for depth, this robust timepiece is a perfect blend of style and extreme functionality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="container">
+                <h2>Ready to Find Your Perfect Timepiece?</h2>
+                <p>Our experts are here to guide you. Contact us for a personalized consultation.</p>
+                <a href="#" class="btn">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Eternity Timepieces. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
