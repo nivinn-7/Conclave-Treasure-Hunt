@@ -46,14 +46,8 @@
             border-radius: 8px;
             margin-bottom: 30px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
             overflow: hidden;
 
-=======
-            padding: 30px;
-            
-            /* Fade-in on scroll animation */
->>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -75,7 +69,6 @@
         }
         
         .arc-content {
-<<<<<<< HEAD
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out, padding 0.4s ease-out;
@@ -85,9 +78,6 @@
         .arc-content.expanded {
             max-height: 1000px;
             padding: 0 30px 30px 30px;
-=======
-            padding-top: 20px;
->>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
         }
 
         .arc-meta {
@@ -183,88 +173,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-=======
-        <div class="arc-section" data-aos-id="return-to-sabaody">
-            <div class="arc-header">
-                <h2>Return to Sabaody Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 517-522 | Manga Chapters: 598-602</div>
-                <p class="arc-description">Following a two-year time skip, the crew reunites at Sabaody Archipelago, all of them having trained and grown significantly stronger. They easily defeat a fake Straw Hat crew and set off for the New World.</p>
-            </div>
-        </div>
-
-        <div class="arc-section" data-aos-id="fish-man-island">
-            <div class="arc-header">
-                <h2>Fish-Man Island Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 523-574 | Manga Chapters: 603-653</div>
-                <p class="arc-description">The crew travels to an underwater kingdom to fulfill a promise. They fight against a group of fish-man extremists who threaten the country's peace and learn more about the world's tumultuous history.</p>
-            </div>
-        </div>
-        
-        <div class="arc-section" data-aos-id="punk-hazard">
-            <div class="arc-header">
-                <h2>Punk Hazard Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 579-625 | Manga Chapters: 654-699</div>
-                <p class="arc-description">The Straw Hats land on a mysterious island split between ice and fire. They form an alliance with Trafalgar Law to take down one of the Four Emperors, Kaido, and they face off against a powerful villain with a devastating gas ability.</p>
-            </div>
-        </div>
-
-        <div class="arc-section" data-aos-id="dressrosa">
-            <div class="arc-header">
-                <h2>Dressrosa Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 629-746 | Manga Chapters: 700-801</div>
-                <p class="arc-description">The crew, along with their new alliance, fights to liberate the country of Dressrosa from the tyrannical rule of Donquixote Doflamingo. This is a large-scale battle with a wide cast of characters, political intrigue, and spectacular battles that bring the crew's power to a new level.</p>
-            </div>
-        </div>
-        
-        <div class="arc-section" data-aos-id="zou">
-            <div class="arc-header">
-                <h2>Zou Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 751-779 | Manga Chapters: 802-822</div>
-                <p class="arc-description">The crew meets the Mink tribe, who live on the back of a giant elephant. They discover the new alliance that has formed and learn about the Road Poneglyphs, ancient texts that can lead them to the One Piece. This arc is a setup for the next major conflict.</p>
-            </div>
-        </div>
-
-        <div class="arc-section" data-aos-id="whole-cake">
-            <div class="arc-header">
-                <h2>Whole Cake Island Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 783-877 | Manga Chapters: 825-902</div>
-                <p class="arc-description">A desperate rescue mission to retrieve Sanji from the clutches of one of the Four Emperors, Big Mom. A small team of the Straw Hats must navigate the fantastical, sweet-filled territory and form a temporary alliance with a former enemy. This arc is a thrilling cat-and-mouse game against an unstoppable force, filled with family drama and betrayal.</p>
-            </div>
-        </div>
-        
-        <div class="arc-section" data-aos-id="wano">
-            <div class="arc-header">
-                <h2>Wano Country Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 890-1085 | Manga Chapters: 909-1057</div>
-                <p class="arc-description">The longest and most climactic saga to date. Luffy and a massive alliance of pirates, samurai, and ninjas team up to liberate the isolated country of Wano from two of the Four Emperors, Kaido and Big Mom. This arc is a grand culmination of many long-running plotlines and features some of the most spectacular fights in the series' history.</p>
-            </div>
-        </div>
-
-        <div class="arc-section" data-aos-id="egghead">
-            <div class="arc-header">
-                <h2>Egghead Island Arc</h2>
-            </div>
-            <div class="arc-content">
-                <div class="arc-meta">Episodes: 1086-present | Manga Chapters: 1060-present</div>
-                <p class="arc-description">The crew enters the final saga of the series. They land on a futuristic island of advanced technology and meet the brilliant scientist, Dr. Vegapunk. This arc is currently ongoing and is revealing major secrets and lore that will lead to the final great war.</p>
-            </div>
-        </div>
->>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
     </div>
 
     <footer class="footer">
@@ -282,7 +190,6 @@
                         observer.unobserve(entry.target);
                     }
                 });
-<<<<<<< HEAD
             }, { threshold: 0.1 });
 
             arcSections.forEach(section => observer.observe(section));
@@ -294,15 +201,6 @@
                     content.classList.toggle('expanded');
                     icon.textContent = content.classList.contains('expanded') ? '-' : '+';
                 });
-=======
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -10% 0px'
-            });
-
-            arcSections.forEach(section => {
-                observer.observe(section);
->>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
             });
         });
     </script>
