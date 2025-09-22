@@ -11,8 +11,8 @@
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
+            background-color: #121212; /* Dark theme background */
+            color: #e0e0e0; /* Light text color */
         }
 
         .header {
@@ -42,12 +42,18 @@
         }
 
         .arc-section {
-            background-color: #fff;
+            background-color: #1e1e1e; /* Darker card background */
             border-radius: 8px;
             margin-bottom: 30px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
             overflow: hidden;
 
+=======
+            padding: 30px;
+            
+            /* Fade-in on scroll animation */
+>>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -58,34 +64,18 @@
             transform: translateY(0);
         }
         
-        .arc-header {
-            padding: 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s ease;
-        }
-
-        .arc-header:hover {
-            background-color: #f5f5f5;
-        }
-        
         .arc-header h2 {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 2.5rem;
             color: #e65100;
             letter-spacing: 1px;
             margin: 0;
+            border-bottom: 2px solid #e65100;
+            padding-bottom: 10px;
         }
-
-        .toggle-icon {
-            font-size: 2rem;
-            color: #e65100;
-            transition: transform 0.3s ease;
-        }
-
+        
         .arc-content {
+<<<<<<< HEAD
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out, padding 0.4s ease-out;
@@ -95,11 +85,14 @@
         .arc-content.expanded {
             max-height: 1000px;
             padding: 0 30px 30px 30px;
+=======
+            padding-top: 20px;
+>>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
         }
 
         .arc-meta {
             font-size: 0.9rem;
-            color: #666;
+            color: #a0a0a0; /* Lighter gray for meta info */
             margin-bottom: 15px;
         }
 
@@ -110,7 +103,7 @@
 
         .arc-description {
             font-size: 1rem;
-            color: #555;
+            color: #e0e0e0;
         }
 
         .footer {
@@ -133,7 +126,6 @@
         <div class="arc-section" data-aos-id="romance-dawn">
             <div class="arc-header">
                 <h2>Romance Dawn Arc</h2>
-                <span class="toggle-icon">+</span>
             </div>
             <div class="arc-content">
                 <div class="arc-meta">Episodes: 1-3 | Manga Chapters: 1-7</div>
@@ -144,18 +136,40 @@
         <div class="arc-section" data-aos-id="orange-town">
             <div class="arc-header">
                 <h2>Orange Town Arc</h2>
-                <span class="toggle-icon">+</span>
             </div>
             <div class="arc-content">
                 <div class="arc-meta">Episodes: 4-8 | Manga Chapters: 8-21</div>
+<<<<<<< HEAD
                 <p class="arc-description">Here the crew faces Buggy the Clown. Also, Nami joins as a temporary ally. For extra details, check <a href="https://onepiece.fandom.com/wiki/Orange_Town_Arc" target="_blank">this page</a>. This task : Mirror Mimic: One person acts; another mirrors them exactly like a reflection for 10–15 seconds. is vital for understanding Nami’s role.</p>
+=======
+                <p class="arc-description">In Orange Town, Luffy and Zoro encounter Buggy the Clown, a pirate with the ability to split his body into pieces. They also meet Nami, a cunning navigator and a skilled thief who initially seeks to rob them, but is forced to ally with them to defeat Buggy.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="syrup-village">
+            <div class="arc-header">
+                <h2>Syrup Village Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 9-18 | Manga Chapters: 22-41</div>
+                <p class="arc-description">The crew lands in Syrup Village, where they meet Usopp, a talented sniper and notorious liar. The arc focuses on Usopp's struggle to convince the villagers of a real pirate threat, as Luffy and his crew must defend the village against the ruthless pirate Captain Kuro and his Black Cat Pirates.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="baratie">
+            <div class="arc-header">
+                <h2>Baratie Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 19-30 | Manga Chapters: 42-68</div>
+                <p class="arc-description">In search of a cook, the Straw Hats arrive at the Baratie, a floating restaurant. They meet Sanji, a chivalrous and powerful chef. The arc culminates in a major battle against the pirate fleet of Don Krieg and introduces the world's greatest swordsman, Dracule Mihawk.</p>
+>>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
             </div>
         </div>
 
         <div class="arc-section" data-aos-id="arlong-park">
             <div class="arc-header">
                 <h2>Arlong Park Arc</h2>
-                <span class="toggle-icon">+</span>
             </div>
             <div class="arc-content">
                 <div class="arc-meta">Episodes: 31-44 | Manga Chapters: 69-95</div>
@@ -166,7 +180,6 @@
         <div class="arc-section" data-aos-id="marineford">
             <div class="arc-header">
                 <h2>Marineford Arc</h2>
-                <span class="toggle-icon">+</span>
             </div>
             <div class="arc-content">
                 <div class="arc-meta">Episodes: 459-489 | Manga Chapters: 549-581</div>
@@ -174,6 +187,88 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+=======
+        <div class="arc-section" data-aos-id="return-to-sabaody">
+            <div class="arc-header">
+                <h2>Return to Sabaody Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 517-522 | Manga Chapters: 598-602</div>
+                <p class="arc-description">Following a two-year time skip, the crew reunites at Sabaody Archipelago, all of them having trained and grown significantly stronger. They easily defeat a fake Straw Hat crew and set off for the New World.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="fish-man-island">
+            <div class="arc-header">
+                <h2>Fish-Man Island Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 523-574 | Manga Chapters: 603-653</div>
+                <p class="arc-description">The crew travels to an underwater kingdom to fulfill a promise. They fight against a group of fish-man extremists who threaten the country's peace and learn more about the world's tumultuous history.</p>
+            </div>
+        </div>
+        
+        <div class="arc-section" data-aos-id="punk-hazard">
+            <div class="arc-header">
+                <h2>Punk Hazard Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 579-625 | Manga Chapters: 654-699</div>
+                <p class="arc-description">The Straw Hats land on a mysterious island split between ice and fire. They form an alliance with Trafalgar Law to take down one of the Four Emperors, Kaido, and they face off against a powerful villain with a devastating gas ability.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="dressrosa">
+            <div class="arc-header">
+                <h2>Dressrosa Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 629-746 | Manga Chapters: 700-801</div>
+                <p class="arc-description">The crew, along with their new alliance, fights to liberate the country of Dressrosa from the tyrannical rule of Donquixote Doflamingo. This is a large-scale battle with a wide cast of characters, political intrigue, and spectacular battles that bring the crew's power to a new level.</p>
+            </div>
+        </div>
+        
+        <div class="arc-section" data-aos-id="zou">
+            <div class="arc-header">
+                <h2>Zou Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 751-779 | Manga Chapters: 802-822</div>
+                <p class="arc-description">The crew meets the Mink tribe, who live on the back of a giant elephant. They discover the new alliance that has formed and learn about the Road Poneglyphs, ancient texts that can lead them to the One Piece. This arc is a setup for the next major conflict.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="whole-cake">
+            <div class="arc-header">
+                <h2>Whole Cake Island Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 783-877 | Manga Chapters: 825-902</div>
+                <p class="arc-description">A desperate rescue mission to retrieve Sanji from the clutches of one of the Four Emperors, Big Mom. A small team of the Straw Hats must navigate the fantastical, sweet-filled territory and form a temporary alliance with a former enemy. This arc is a thrilling cat-and-mouse game against an unstoppable force, filled with family drama and betrayal.</p>
+            </div>
+        </div>
+        
+        <div class="arc-section" data-aos-id="wano">
+            <div class="arc-header">
+                <h2>Wano Country Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 890-1085 | Manga Chapters: 909-1057</div>
+                <p class="arc-description">The longest and most climactic saga to date. Luffy and a massive alliance of pirates, samurai, and ninjas team up to liberate the isolated country of Wano from two of the Four Emperors, Kaido and Big Mom. This arc is a grand culmination of many long-running plotlines and features some of the most spectacular fights in the series' history.</p>
+            </div>
+        </div>
+
+        <div class="arc-section" data-aos-id="egghead">
+            <div class="arc-header">
+                <h2>Egghead Island Arc</h2>
+            </div>
+            <div class="arc-content">
+                <div class="arc-meta">Episodes: 1086-present | Manga Chapters: 1060-present</div>
+                <p class="arc-description">The crew enters the final saga of the series. They land on a futuristic island of advanced technology and meet the brilliant scientist, Dr. Vegapunk. This arc is currently ongoing and is revealing major secrets and lore that will lead to the final great war.</p>
+            </div>
+        </div>
+>>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
     </div>
 
     <footer class="footer">
@@ -183,7 +278,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const arcSections = document.querySelectorAll('.arc-section');
-            const arcHeaders = document.querySelectorAll('.arc-header');
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -192,6 +286,7 @@
                         observer.unobserve(entry.target);
                     }
                 });
+<<<<<<< HEAD
             }, { threshold: 0.1 });
 
             arcSections.forEach(section => observer.observe(section));
@@ -203,9 +298,17 @@
                     content.classList.toggle('expanded');
                     icon.textContent = content.classList.contains('expanded') ? '-' : '+';
                 });
+=======
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -10% 0px'
+            });
+
+            arcSections.forEach(section => {
+                observer.observe(section);
+>>>>>>> 2c78b244627195a0438a2d7248f0866c9931ee65
             });
         });
     </script>
-
 </body>
 </html>
